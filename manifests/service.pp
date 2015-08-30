@@ -16,10 +16,10 @@ class hhvm::service {
     warning("${name} is not part of the public API of the ${module_name} module and should not be directly included in the manifest.")
   }
 
-  service { 'hhvm':
-    ensure    => 'running',
-    enable    => true,
-    hasstatus => true,
-    require   => Package[$hhvm::package::package],
-  }
+  # service { 'hhvm':
+  #   ensure    => 'running',
+  #   enable    => true,
+  #   hasstatus => true,
+  #   require   => Package[$hhvm::package::package],
+  # }
 }
